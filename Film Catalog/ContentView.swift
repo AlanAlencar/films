@@ -10,12 +10,22 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "film.stack")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 80, height: 80)
+            Text("Deadpool")
+                .font(.title)
+            Text("Tim Miller")
+                .font(.title3)
+                .foregroundColor(.gray)
+            // TODO: - Voltar aqui para melhorar este código repetitivo
+            Image(systemName: "star.fill")
                 .foregroundColor(.yellow)
-            Text("Film Catalog")
+            Image(systemName: "star.fill")
+                .foregroundColor(.yellow)
+            Image(systemName: "star.fill")
+                .foregroundColor(.yellow)
+            Image(systemName: "star.fill")
+                .foregroundColor(.yellow)
+            Image(systemName: "star")
+                .foregroundColor(.secondary)
         }
         .padding()
     }
