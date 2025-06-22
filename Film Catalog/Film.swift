@@ -15,6 +15,7 @@ struct Film: Hashable, Codable {
     var director: String
     var actors: String
     var synopsis: String
+    var genre: String
     
     private var cover: String
     var poster: Image {

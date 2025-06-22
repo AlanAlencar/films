@@ -12,10 +12,27 @@ struct FilmRow: View {
     var film: Film
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            film.poster
+                .resizable()
+                .frame(width: 60, height: 60)
+                .clipShape(RoundedRectangle(cornerRadius: 30))
+            VStack(alignment: .leading) {
+                Text(film.title)
+                    .font(.headline)
+                Text(film.genre)
+                    .font(.footnote)
+            }
+            
+            Spacer()
+            
+        }
     }
 }
 
 #Preview {
-    FilmRow(film: films[0])
+    Group {
+        FilmRow(film: films[0])
+        FilmRow(film: films[1])
+    }
 }
