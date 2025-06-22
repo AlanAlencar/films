@@ -9,8 +9,17 @@ import SwiftUI
 
 struct FilmList: View {
     var body: some View {
-        List(films, id: \.id) { film in
-            FilmRow(film: film)
+        NavigationSplitView {
+            List(films, id: \.id) { film in
+                NavigationLink {
+                    FilmDetail(film: film)
+                } label: {
+                    FilmRow(film: film)
+                }
+            }
+            .navigationTitle("Filmes")
+        } detail: {
+            Text("Selecione um filme.")
         }
     }
 }
