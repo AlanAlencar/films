@@ -9,5 +9,10 @@ A simple Swift 6 application showing all the power of SwiftUI to manipulate view
 ![App Store](https://img.shields.io/badge/App_Store-0D96F6?style=for-the-badge&logo=app-store&logoColor=white)
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 
+[Animação App](Screen%20Recording%202025-06-22%20at%2011.02.50.mov)
+
+![Screenshot](Screenshot%202025-06-22%20at%2011.59.15.png)
+![Screenshot](Screenshot%202025-06-22%20at%2011.59.25.png)
+
 
 > By Alan Alencar, 2025
